@@ -135,7 +135,8 @@
         cycle-length: (get cycle-length pool),
         admin: (get admin pool),
         member-count: (- (get member-count pool) u1)
-      })
+      }
+    )
     
     ;; Mark member as inactive
     (map-set pool-members
@@ -144,10 +145,11 @@
         joined-at: (get joined-at member-data),
         active: false,
         contribution: u0
-      })
+      }
+    )
     
-    ;; Recalculate shares for remaining members - need to check response
-    (try! (adjust-contributions pool-id))
+    ;; Recalculate shares for remaining members
+    (adjust-contributions pool-id)
     (ok true)
   )
 )
