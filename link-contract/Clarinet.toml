@@ -7,8 +7,16 @@ cache_dir = '.\.cache'
 requirements = []
 [contracts.acces-control]
 path = 'contracts/acces-control.clar'
+clarity_version = 1
+epoch = 2.05
+
 [contracts.fractional-payment]
 path = 'contracts/fractional-payment.clar'
+clarity_version = 3
+epoch = 3.0
+
+[contracts.multi-service_pooling]
+path = 'contracts/multi-service_pooling.clar'
 clarity_version = 3
 epoch = 3.0
 [repl.analysis]
