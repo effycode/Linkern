@@ -10,6 +10,11 @@ path = 'contracts/acces-control.clar'
 clarity_version = 1
 epoch = 2.05
 
+[contracts.dao-governance]
+path = 'contracts/dao-governance.clar'
+clarity_version = 3
+epoch = 3.0
+
 [contracts.fractional-payment]
 path = 'contracts/fractional-payment.clar'
 clarity_version = 3
