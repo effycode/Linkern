@@ -5,6 +5,11 @@ authors = []
 telemetry = true
 cache_dir = '.\.cache'
 requirements = []
+[contracts.Subscription-Pool-escrow]
+path = 'contracts/Subscription-Pool-escrow.clar'
+clarity_version = 3
+epoch = 3.0
+
 [contracts.acces-control]
 path = 'contracts/acces-control.clar'
 clarity_version = 1
