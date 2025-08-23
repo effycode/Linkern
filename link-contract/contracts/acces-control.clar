@@ -137,7 +137,7 @@
   )
     (and
       (is-some subscription)
-      (<= stacks-block-height (get end-block (unwrap! subscription false)))
+      (<= block-height (get end-block (unwrap! subscription false)))
     )
   )
 )
@@ -163,7 +163,7 @@
       { user: tx-sender }
       {
         credits: (+ (get credits current-credits) amount),
-        last-usage-block: stacks-block-height
+        last-usage-block: block-height
       }
     )
     
